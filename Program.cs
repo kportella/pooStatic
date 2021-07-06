@@ -6,12 +6,11 @@ namespace pooStatic
     {
         static void Main(string[] args)
         {
-            string nome = "Danilo";
-            ModoTexto.log = nome;
-            //ModoTexto.Escrever("Qual é o seu nome");
-            //nome = ModoTexto.Ler("Qual é o seu nome");
-            ModoTexto.Ler("Olá " + ModoTexto.log);
-            ModoTexto.Pausar();
+            Ferramenta f1 = new Ferramenta("Martelo", 100);
+            f1.ExibirDados();
+            Ferramenta f2 = new Ferramenta("Martelete", 100);
+            f2.ExibirDados();
+            Console.ReadKey();
         }
 
     }
